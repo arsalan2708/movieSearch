@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Search</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div id="container">
+        
+        <h1>Show Search</h1>
+        <form class="movieSearch" name="movieSearch">
+            <div class="searchSt">
+                <input type="text" name="showName" id="showName" required>
+                <button type="submit">Search</button>
+                <div class="rt">
+                    <div>
+                        <input type="checkbox" name="rating" id="rating"> <label for="rating">By Rating</label>
+                    </div>
+                    <div id="rater" class="disable"> 
+                        <label for="minRating">Minimum Rating</label><input type="number" name="minRating" id="minRating" value=0 step=.2 min="0" max="10">
+                    </div>
+                </div>
+            </div>
+        </form>
+    
+        <div class="content"></div>
+
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
